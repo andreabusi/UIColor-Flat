@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fl6-Az-ped">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flat Colors-->
+        <scene sceneID="n2u-yR-b02">
+            <objects>
+                <tableViewController id="0qm-bW-pad" customClass="ColorsTableViewController" customModule="UIColor_Flat_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gO3-6U-ZYX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColorCell" rowHeight="80" id="X0Y-n2-ssE" customClass="ColorTableViewCell" customModule="UIColor_Flat_Demo" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X0Y-n2-ssE" id="Zpr-xG-yF4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-dg-mAY">
+                                            <rect key="frame" x="8" y="53" width="584" height="22"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="IK4-dg-mAY" firstAttribute="top" secondItem="Zpr-xG-yF4" secondAttribute="topMargin" constant="45" id="NqA-D5-XGG"/>
+                                        <constraint firstItem="IK4-dg-mAY" firstAttribute="leading" secondItem="Zpr-xG-yF4" secondAttribute="leadingMargin" id="boX-jM-1Zd"/>
+                                        <constraint firstItem="IK4-dg-mAY" firstAttribute="trailing" secondItem="Zpr-xG-yF4" secondAttribute="trailingMargin" id="mbQ-O0-TYJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IK4-dg-mAY" secondAttribute="bottom" constant="-3" id="zgF-Ks-dBK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="colorNameLabel" destination="IK4-dg-mAY" id="Rhu-Bf-spR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0qm-bW-pad" id="IM1-Qh-JVv"/>
+                            <outlet property="delegate" destination="0qm-bW-pad" id="SVn-A9-Ijz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Flat Colors" id="Uq5-uA-du9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9a-2N-IQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w6Y-fP-LS9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fl6-Az-ped" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bka-lH-A1x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0qm-bW-pad" kind="relationship" relationship="rootViewController" id="KeY-wK-FG5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJa-cj-Kfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="424"/>
+        </scene>
+    </scenes>
+</document>

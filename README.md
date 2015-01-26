@@ -4,38 +4,38 @@ A sample category for UIColor class who adds flat colors from http://flatuicolor
 
 ## Usage
 
-Simply add UIColor+Flat [.h/.m] to your project!
+Simply add UIColor+Flat.swift to your project!
 Here are the new colors:
 
-	(UIColor *)turquioseColor;
-	(UIColor *)greenSeaColor;
+	turquioseColor() -> UIColor
+	greenSeaColor() -> UIColor
 
-	(UIColor *)emeraldColor;
-	(UIColor *)nephritisColor;
+	emeraldColor() -> UIColor
+	nephritisColor() -> UIColor
 
-	(UIColor *)peterRiverColor;
-	(UIColor *)belizeHoleColor;
+	peterRiverColor() -> UIColor
+	belizeHoleColor() -> UIColor
 
-	(UIColor *)amethystColor;
-	(UIColor *)wisteriaColor;
+	amethystColor() -> UIColor
+	wisteriaColor() -> UIColor
 
-	(UIColor *)wetAsphaltColor;
-	(UIColor *)midnightBlueColor;
+	wetAsphaltColor() -> UIColor
+	midnightBlueColor() -> UIColor
 
-	(UIColor *)sunFlowerColor;
-	(UIColor *)orangeFlatColor;
+	sunFlowerColor() -> UIColor
+	orangeFlatColor() -> UIColor
 
-	(UIColor *)carrotColor;
-	(UIColor *)pumpkinColor;
+	carrotColor() -> UIColor
+	pumpkinColor() -> UIColor
 
-	(UIColor *)alizarinColor;
-	(UIColor *)pomegranateColor;
+	alizarinColor() -> UIColor
+	pomegranateColor() -> UIColor
 
-	(UIColor *)cloudsColor;
-	(UIColor *)silverColor;
+	cloudsColor() -> UIColor
+	silverColor() -> UIColor
 
-	(UIColor *)concreteColor;
-	(UIColor *)asbestosColor;'
+	concreteColor() -> UIColor
+	asbestosColor() -> UIColor
 
 ## Colors
 
