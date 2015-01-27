@@ -7,35 +7,35 @@ A sample category for UIColor class who adds flat colors from http://flatuicolor
 Simply add UIColor+Flat.swift to your project!
 Here are the new colors:
 
-	class turquioseColor() -> UIColor
-	class greenSeaColor() -> UIColor
+	class func turquioseColor() -> UIColor
+	class func greenSeaColor() -> UIColor
 
-	class emeraldColor() -> UIColor
-	class nephritisColor() -> UIColor
+	class func emeraldColor() -> UIColor
+	class func nephritisColor() -> UIColor
 
-	class peterRiverColor() -> UIColor
-	class belizeHoleColor() -> UIColor
+	class func peterRiverColor() -> UIColor
+	class func belizeHoleColor() -> UIColor
 
-	class amethystColor() -> UIColor
-	class wisteriaColor() -> UIColor
+	class func amethystColor() -> UIColor
+	class func wisteriaColor() -> UIColor
 
-	class wetAsphaltColor() -> UIColor
-	class midnightBlueColor() -> UIColor
+	class func wetAsphaltColor() -> UIColor
+	class func midnightBlueColor() -> UIColor
 
-	class sunFlowerColor() -> UIColor
-	class orangeFlatColor() -> UIColor
+	class func sunFlowerColor() -> UIColor
+	class func orangeFlatColor() -> UIColor
 
-	class carrotColor() -> UIColor
-	class pumpkinColor() -> UIColor
+	class func carrotColor() -> UIColor
+	class func pumpkinColor() -> UIColor
 
-	class alizarinColor() -> UIColor
-	class pomegranateColor() -> UIColor
+	class func alizarinColor() -> UIColor
+	class func pomegranateColor() -> UIColor
 
-	class cloudsColor() -> UIColor
-	class silverColor() -> UIColor
+	class func cloudsColor() -> UIColor
+	class func silverColor() -> UIColor
 
-	concreteColor() -> UIColor
-	asbestosColor() -> UIColor
+	class func concreteColor() -> UIColor
+	class func asbestosColor() -> UIColor
 
 The extension also provides two utility methods:
 
