@@ -7,35 +7,42 @@ A sample category for UIColor class who adds flat colors from http://flatuicolor
 Simply add UIColor+Flat.swift to your project!
 Here are the new colors:
 
-	turquioseColor() -> UIColor
-	greenSeaColor() -> UIColor
+	class turquioseColor() -> UIColor
+	class greenSeaColor() -> UIColor
 
-	emeraldColor() -> UIColor
-	nephritisColor() -> UIColor
+	class emeraldColor() -> UIColor
+	class nephritisColor() -> UIColor
 
-	peterRiverColor() -> UIColor
-	belizeHoleColor() -> UIColor
+	class peterRiverColor() -> UIColor
+	class belizeHoleColor() -> UIColor
 
-	amethystColor() -> UIColor
-	wisteriaColor() -> UIColor
+	class amethystColor() -> UIColor
+	class wisteriaColor() -> UIColor
 
-	wetAsphaltColor() -> UIColor
-	midnightBlueColor() -> UIColor
+	class wetAsphaltColor() -> UIColor
+	class midnightBlueColor() -> UIColor
 
-	sunFlowerColor() -> UIColor
-	orangeFlatColor() -> UIColor
+	class sunFlowerColor() -> UIColor
+	class orangeFlatColor() -> UIColor
 
-	carrotColor() -> UIColor
-	pumpkinColor() -> UIColor
+	class carrotColor() -> UIColor
+	class pumpkinColor() -> UIColor
 
-	alizarinColor() -> UIColor
-	pomegranateColor() -> UIColor
+	class alizarinColor() -> UIColor
+	class pomegranateColor() -> UIColor
 
-	cloudsColor() -> UIColor
-	silverColor() -> UIColor
+	class cloudsColor() -> UIColor
+	class silverColor() -> UIColor
 
 	concreteColor() -> UIColor
 	asbestosColor() -> UIColor
+
+The extension also provides two utility methods:
+
+	func bd_componentsFromColor() -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+	func bd_hexFromColor() -> String
+
+Enjoy! :]
 
 ## Colors
 
