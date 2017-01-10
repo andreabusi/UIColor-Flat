@@ -9,29 +9,19 @@
 import UIKit
 
 class ColorTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var colorNameLabel: UILabel!
-    var color: ColorItem? {
-        didSet {
-            configureCell()
-        }
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    func configureCell()
-    {
-        if let unwrapColor = self.color {
-            self.colorNameLabel.text = unwrapColor.name + " #\(unwrapColor.color.bd_hexFromColor())"
-            self.backgroundColor = unwrapColor.color
-        }
-    }
-
+   
+   @IBOutlet weak var colorNameLabel: UILabel!
+   
+   var color: ColorItem? {
+      didSet {
+         configureCell()
+      }
+   }
+   
+   func configureCell() {
+      if let color = color {
+         colorNameLabel.text = color.name + " #\(color.color.bd_hex())"
+         backgroundColor = color.color
+      }
+   }
 }

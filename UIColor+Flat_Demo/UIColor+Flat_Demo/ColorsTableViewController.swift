@@ -16,46 +16,43 @@ struct ColorItem {
 class ColorsTableViewController: UITableViewController {
 
     var colors: [ColorItem] = [
-        ColorItem(name: "Turquiose", color: UIColor.turquioseColor()),
-        ColorItem(name: "Green Sea", color: UIColor.greenSeaColor()),
-        ColorItem(name: "Emerald", color: UIColor.emeraldColor()),
-        ColorItem(name: "Nephritis", color: UIColor.nephritisColor()),
-        ColorItem(name: "Peter River", color: UIColor.peterRiverColor()),
-        ColorItem(name: "Belize Hole", color: UIColor.belizeHoleColor()),
-        ColorItem(name: "Amethyst", color: UIColor.amethystColor()),
-        ColorItem(name: "Wisteria", color: UIColor.wisteriaColor()),
-        ColorItem(name: "Wet Asphalt", color: UIColor.wetAsphaltColor()),
-        ColorItem(name: "Midnight Blue", color: UIColor.midnightBlueColor()),
-        ColorItem(name: "Sun Flower", color: UIColor.sunFlowerColor()),
-        ColorItem(name: "Orange", color: UIColor.orangeFlatColor()),
-        ColorItem(name: "Carrot", color: UIColor.carrotColor()),
-        ColorItem(name: "Pumpkin", color: UIColor.pumpkinColor()),
-        ColorItem(name: "Alizarin", color: UIColor.alizarinColor()),
-        ColorItem(name: "Pomegranate", color: UIColor.pomegranateColor()),
-        ColorItem(name: "Clouds", color: UIColor.cloudsColor()),
-        ColorItem(name: "Silver", color: UIColor.silverColor()),
-        ColorItem(name: "Concrete", color: UIColor.concreteColor()),
-        ColorItem(name: "Asbestos", color: UIColor.asbestosColor())
+        ColorItem(name: "Turquiose", color: UIColor.turquiose),
+        ColorItem(name: "Green Sea", color: UIColor.greenSea),
+        ColorItem(name: "Emerald", color: UIColor.emerald),
+        ColorItem(name: "Nephritis", color: UIColor.nephritis),
+        ColorItem(name: "Peter River", color: UIColor.peterRiver),
+        ColorItem(name: "Belize Hole", color: UIColor.belizeHole),
+        ColorItem(name: "Amethyst", color: UIColor.amethyst),
+        ColorItem(name: "Wisteria", color: UIColor.wisteria),
+        ColorItem(name: "Wet Asphalt", color: UIColor.wetAsphalt),
+        ColorItem(name: "Midnight Blue", color: UIColor.midnightBlue),
+        ColorItem(name: "Sun Flower", color: UIColor.sunFlower),
+        ColorItem(name: "Orange", color: UIColor.orangeFlat),
+        ColorItem(name: "Carrot", color: UIColor.carrot),
+        ColorItem(name: "Pumpkin", color: UIColor.pumpkin),
+        ColorItem(name: "Alizarin", color: UIColor.alizarin),
+        ColorItem(name: "Pomegranate", color: UIColor.pomegranate),
+        ColorItem(name: "Clouds", color: UIColor.clouds),
+        ColorItem(name: "Silver", color: UIColor.silver),
+        ColorItem(name: "Concrete", color: UIColor.concrete),
+        ColorItem(name: "Asbestos", color: UIColor.asbestos)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.estimatedRowHeight = 80.0
+        tableView.estimatedRowHeight = 80.0
     }
 
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Return the number of rows in the section.
-        return self.colors.count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colors.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ColorCell", forIndexPath: indexPath) as ColorTableViewCell
-
-        cell.color = self.colors[indexPath.row]
-        
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: indexPath) as! ColorTableViewCell
+        cell.color = colors[indexPath.row]
         return cell
     }
 }
