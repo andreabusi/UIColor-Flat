@@ -7,35 +7,35 @@ A sample category for UIColor class who adds flat colors from http://flatuicolor
 Simply add UIColor+Flat.swift to your project!
 Here are the new colors:
 
-	class var turquioseColor: UIColor
-	class var greenSeaColor: UIColor
+	class var turquiose UIColor
+	class var greenSea: UIColor
 
-	class var emeraldColor: UIColor
-	class var nephritisColor: UIColor
+	class var emerald: UIColor
+	class var nephritis: UIColor
 
-	class var peterRiverColor: UIColor
-	class var belizeHoleColor: UIColor
+	class var peterRiver: UIColor
+	class var belizeHole: UIColor
 
-	class var amethystColor: UIColor
-	class var wisteriaColor: UIColor
+	class var amethyst: UIColor
+	class var wisteria: UIColor
 
-	class var wetAsphaltColor: UIColor
-	class var midnightBlueColor: UIColor
+	class var wetAsphalt: UIColor
+	class var midnightBlue: UIColor
 
-	class var sunFlowerColor: UIColor
-	class var orangeFlatColor: UIColor
+	class var sunFlower: UIColor
+	class var orangeFlat: UIColor
 
-	class var carrotColor: UIColor
-	class var pumpkinColor: UIColor
+	class var carrot: UIColor
+	class var pumpkin: UIColor
 
-	class var alizarinColor: UIColor
-	class var pomegranateColor: UIColor
+	class var alizarin: UIColor
+	class var pomegranate: UIColor
 
-	class var cloudsColor: UIColor
-	class var silverColor: UIColor
+	class var clouds: UIColor
+	class var silver: UIColor
 
-	class var concreteColor: UIColor
-	class var asbestosColor: UIColor
+	class var concrete: UIColor
+	class var asbestos: UIColor
 
 The extension also provides two utility methods:
 
