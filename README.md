@@ -7,7 +7,7 @@ A sample category for UIColor class who adds flat colors from http://flatuicolor
 Simply add UIColor+Flat.swift to your project!
 Here are the new colors:
 
-	class var turquiose UIColor
+	class var turquiose: UIColor
 	class var greenSea: UIColor
 
 	class var emerald: UIColor
