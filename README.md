@@ -46,7 +46,7 @@ Enjoy! :]
 
 ## Compatibility
 
-UIColor+Flat is ready for Swift 3!
+UIColor+Flat is ready for Swift 4!
 
 ## Colors
 
